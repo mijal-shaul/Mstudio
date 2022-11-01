@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="First reggeaton dance clases in Israel!">
+        <meta name="robots" content="index,follow">
+        <link rel="icon" href="/icons/M-logo.svg">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&family=Orbitron&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/style.css">
+        <title>Mstudio</title>
+    </head>
+<body>
+    <header>
+        <img src="/icons/Logo.svg" alt="logo" class="logo">
+        <img src="/icons/Line 3.svg" alt="line" class="line">
+    <div class="action">
+        <div class="profile" onclick="menuToggle();">
+            <a href="#">MY ACCOUNT</a>
+        </div>
+        <div class="menu">
+            <h3>[Name]</h3>
+            <ul>
+                <li><img src="/icons/user.png"><a href="#">My Pofile</a></li>
+                <li><img src="/icons/edit.png"><a href="#">Edit Pofile</a></li>
+                <li><img src="/icons/envelope.png"><a href="#">Inbox</a></li>
+                <li><img src="/icons/settings.png"><a href="#">Settings</a></li>
+                <li><img src="/icons/question.png"><a href="#">Help</a></li>
+                <li><img src="/icons/log-out.png"><a href="#">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function menuToggle(){
+            const toggleMenu = document.querySelector('.menu');
+            toggleMenu.classList.toggle('active');
+        }
+        </script>
+    </header>
+    <section>
+        <h2>Welcome [Name]!</h2>
+        <div class="hover-classes">
+            <h4>Upcoming classes of the week:</h4>
+            <img src="/icons/line.svg" class="line">
+            <div class="classes">
+                <a href="../class-info/index.html"><button class="button">Tuesday 7 <br>5:00pm</button></a> 
+                <button class="button">Thursday 11<br>6:00pm</button>
+                <button class="button">Sunday<br>1:00pm</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

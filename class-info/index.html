@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="First reggeaton dance clases in Israel!">
+        <meta name="robots" content="index,follow">
+        <link rel="icon" href="/icons/M-logo.svg">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&family=Orbitron&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/style.css">
+        <title>Mstudio</title>
+    </head>
+<body>
+    <section>
+        <img src="/icons/line.svg" class="line">
+        <div class="class-details">
+            <h3>TEACHER: Mijal Shaul</h3>
+            <h3>DATE: 07-06-2022 at 5:00pm</h3>
+            <h3>ADRESS: 98 dizengoff, 4th floor tel aviv</h3>
+        </div>
+        <img src="/icons/Line 3.svg" class="line3">
+        <div class="options">
+            <div class="span-checkbox1"><input type="checkbox" class="check-box"><span>Buy a class (28 ILS)</span></div>
+            <div class="span-checkbox2"><input type="checkbox" class="check-box"><a href="../plans/index.html"><span>Get a plan</span></a></div>
+        </div>
+        <a href="../payment/index.html"><button class="button">NEXT</button></a>
+        <a href="../sign-up/index.html">Go back</a>
+    </section>
+    <script>
+        formcControlCheckbox = [...document.querySelectorAll('.form-control-checkbox')];
+        formcControlCheckbox.forEach((onebyone) => {
+            onebyone.addEventListener('click', function(){
+                formcControlCheckbox.forEach((onebyone) => {
+                    onebyone.checked = false;
+                })
+                onebyone.checked = true;
+            })
+        })
+    </script>
+</body>
+</html>

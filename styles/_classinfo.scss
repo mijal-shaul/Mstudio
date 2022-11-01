@@ -1,0 +1,44 @@
+section{
+    .line{
+        @include flex(center,center,column);
+        margin-bottom: 7rem
+    }
+    .line3{
+        margin-top: 3rem;
+    }
+    .options{
+        @include flex(center,center,row);
+        .span-checkbox1{
+            color: white;
+            margin-right: 1rem;
+            @include flex(center,center,row);
+            color: hsl(0, 0%, 30%);
+            font-size: 1.2rem;
+        }
+        .span-checkbox2{
+            margin: 2rem 10rem;
+            color: hsl(0, 0%, 30%);
+            font-size: 1.2rem;
+            @include flex(center,center,row);
+        }
+        span{
+            margin-left: 1rem
+        }
+    }
+    .class-details{
+        @include flex(center,right,column);
+        h3{
+            font-size: 3rem;
+            padding: 2rem;
+        }
+    }
+}
+
+a{
+    color: hsl(0, 0%, 50%);
+}
+a:hover{
+    color: hsl(0, 0%, 80%);
+    transition: .5s;
+}
+

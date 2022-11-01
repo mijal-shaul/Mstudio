@@ -1,0 +1,12 @@
+.thankyou-page{
+    h3{
+        color: white;
+        margin-top: 10rem;
+    }
+    section{
+        @include flex(center,center,column);
+    }
+    .button-secondary{
+        margin-top: 6rem;
+    }
+}

@@ -1,0 +1,26 @@
+
+$background-color: #923FD3;
+$purple-text: #D299FF;
+
+@mixin flex($justify, $align, $direction){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+
+@import "global";
+@import "intro";
+@import "startjourney";
+@import "signup";
+@import "welcome";
+@import "classinfo";
+@import "payment";
+@import "thankyou1";
+@import "thankyou2";
+@import "plans";
+@import "account";
+
+
+

@@ -1,0 +1,16 @@
+.animation{
+    @include flex(center,center,row);
+    margin-top: 4.5rem;
+}
+.half-left{
+    margin-right: 60rem;
+}
+.single-section{
+    @include flex(center,center,row);
+    .info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+}

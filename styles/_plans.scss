@@ -1,0 +1,45 @@
+.plan-info{
+    .primary{
+        color: white;
+    }
+    img{
+        display: flex;
+        justify-content: center;
+    }
+    .secondary{
+        font-size: 1.5rem;
+    }
+}
+.plans{
+    @include flex(center,center,row);
+    button{
+        margin: 3rem 3rem 0 3rem;
+        font-size: 2rem;
+    }
+}
+.secondary-white{
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 2rem
+}
+
+
+
+a{
+    text-decoration: none
+}
+.block .info-dropdown{
+    @include flex(center,center,column);
+    position: relative;
+    top: -5rem;
+    transition: 1s;
+    visibility: hidden;
+    opacity: 0;
+}
+.block:hover .info-dropdown{
+    top: 0;
+    visibility: visible;
+    opacity: 1;
+}
+
